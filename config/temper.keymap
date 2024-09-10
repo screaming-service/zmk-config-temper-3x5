@@ -497,10 +497,10 @@
         base {
             display-name = "Base";
             bindings = <
-&kp Q    &kp W         &kp E         &kp R        &kp T       &kp Y        &kp U           &kp I             &kp O           &kp P
-&lt 3 A  &hml LSHFT S  &hml LCTRL D  &hml LALT F  &kp G       &kp H        &hmr RALT J     &hmr RCTRL K      &hmr RSHFT L    &kp SEMI
-&kp Z    &kp X         &kp C         &kp V        &kp B       &kp N        &kp M           &kp COMMA         &kp DOT         &kp GRAVE
-                       &sk LCTRL  &sl 1     &sk LGUI          &td_spc_eq   &sl 2           &none
+&kp Q        &kp W         &kp E         &kp R        &kp T       &kp Y        &kp U           &kp I             &kp O           &kp P
+&hml LGUI A  &hml LSHFT S  &hml LCTRL D  &hml LALT F  &kp G       &kp H        &hmr RALT J     &hmr RCTRL K      &hmr RSHFT L    &hmr RGUI SEMI
+&kp Z        &kp X         &kp C         &kp V        &kp B       &kp N        &kp M           &kp COMMA         &kp DOT         &kp GRAVE
+                       &none         &td_spc_eq    &sl 1          &sl 2        &sl 3           &none
             >;
         };
 
@@ -510,7 +510,7 @@
 &trans     &td_star    &td_dqt       &kp LPAR      &kp RPAR      AS(BSLH)   AS(N7)     AS(N8)     AS(N9)     AS(N0)
 &trans     &td_amps    &td_under     &kp LBKT      &kp RBKT      AS(SQT)    AS(N4)     AS(N5)     AS(N6)     AS(MINUS)
 &trans     &td_pipe    &td_plus      &kp LBRC      &kp RBRC      AS(FSLH)   AS(N1)     AS(N2)     AS(N3)     AS(EQUAL)
-                       &trans        &tog 1        &trans        &trans     &mo 3        &none
+                       &trans        &trans        &trans        &trans     &trans        &none
             >;
         };
 
@@ -520,7 +520,7 @@
 &kp F7  &kp F8   &kp F9        &ht_r 0 0      &none        &kp F10   &kp F11      &kp F12   &none      &none
 &kp F4  &kp F5   &kp F6        &ht_f 0 0      &ht_g 0 0    &kp LEFT  &kp DOWN     &kp UP    &kp RIGHT  &trans
 &kp F1  &kp F2   &kp F3        &ht_v 0 0      &none        &kp HOME  &kp PG_DN    &kp PG_UP &kp END    &none
-                 &trans         &mo 3        &trans        &trans    &tog 2       &none
+                 &trans         &trans        &trans        &trans    &trans       &none
             >;
         };
 
