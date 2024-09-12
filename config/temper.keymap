@@ -255,6 +255,13 @@
             flavor = "tap-preferred";
             bindings = <&tx_y>, <&tx_p>;
         };
+        td_f: tap_dance_vim_equal_panels {
+            label = "TD_VIM_EQUAL_PANELS";
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&ht_f 0 0>, <&vi_eq>;
+        };
 
         ht_v: hold_tap_at_v {
             label = "HOLD_TAP_AT_V";
@@ -518,7 +525,7 @@
             display-name = "Nav";
             bindings = <
 &kp F7  &kp F8   &kp F9        &ht_r 0 0      &none        &kp F10   &kp F11      &kp F12   &none      &none
-&kp F4  &kp F5   &kp F6        &ht_f 0 0      &ht_g 0 0    &kp LEFT  &kp DOWN     &kp UP    &kp RIGHT  &trans
+&kp F4  &kp F5   &kp F6        &td_f          &ht_g 0 0    &kp LEFT  &kp DOWN     &kp UP    &kp RIGHT  &trans
 &kp F1  &kp F2   &kp F3        &ht_v 0 0      &none        &kp HOME  &kp PG_DN    &kp PG_UP &kp END    &none
                  &trans        &trans         &mo 3        &tog 2    &trans       &none
             >;
